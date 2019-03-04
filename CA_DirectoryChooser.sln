@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA_DirectoryChooser", "CA_DirectoryChooser\CA_DirectoryChooser.csproj", "{9098C498-8655-45C2-9698-6ED3F8ABB8CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FEA2FEF4-B9E6-4041-8A6B-316910EF7A5B}"
+	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
+		GitVersion.yml = GitVersion.yml
+		NuGet.Server.config = NuGet.Server.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9098C498-8655-45C2-9698-6ED3F8ABB8CE}.Debug|x64.ActiveCfg = Debug|x64
+		{9098C498-8655-45C2-9698-6ED3F8ABB8CE}.Debug|x64.Build.0 = Debug|x64
+		{9098C498-8655-45C2-9698-6ED3F8ABB8CE}.Debug|x86.ActiveCfg = Debug|x64
+		{9098C498-8655-45C2-9698-6ED3F8ABB8CE}.Debug|x86.Build.0 = Debug|x64
+		{9098C498-8655-45C2-9698-6ED3F8ABB8CE}.Release|x64.ActiveCfg = Release|x64
+		{9098C498-8655-45C2-9698-6ED3F8ABB8CE}.Release|x64.Build.0 = Release|x64
+		{9098C498-8655-45C2-9698-6ED3F8ABB8CE}.Release|x86.ActiveCfg = Release|x64
+		{9098C498-8655-45C2-9698-6ED3F8ABB8CE}.Release|x86.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABADA1A6-A23D-4A77-A478-DAB640CD86FE}
+	EndGlobalSection
+EndGlobal
