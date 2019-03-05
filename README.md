@@ -10,7 +10,9 @@ Include the built CA_DirectoryChooser.CA.dll from this project in your own proje
 
 Reference the .dll in your .wxs like so:
 
-`<Binary Id="CA_DirectoryChooser" SourceFile="pathToPackages/CA_DirectoryChooser.X.X.X/lib/net45/CA_DirectoryChooser.CA.dll" />`
+```xml
+<Binary Id="CA_DirectoryChooser" SourceFile="pathToPackages/CA_DirectoryChooser.X.X.X/lib/net45/CA_DirectoryChooser.CA.dll" />
+```
 
 * "pathToPackages" could be $(var.SolutionDir)/packages
 
@@ -18,7 +20,9 @@ Reference the .dll in your .wxs like so:
 
 And now you can have your CustomAction: <br />
 
-`<CustomAction Id="OpenFileChooser" BinaryKey="CA_DirectoryChooser" DllEntry="OpenFileChooser" />`
+```xml
+<CustomAction Id="OpenFileChooser" BinaryKey="CA_DirectoryChooser" DllEntry="OpenFileChooser" />
+```
 
 * Id can be something different
 
@@ -26,10 +30,12 @@ And now you can have your CustomAction: <br />
 
 Which can now be called in the GUI (Publish element is a child of the Button-Control element) :
 
-`<Control Id="ChangeFolder" Type="PushButton" X="79" Y="158" Width="80" Height="17" Text="Browse">
+```xml
+<Control Id="ChangeFolder" Type="PushButton" X="79" Y="158" Width="80" Height="17" Text="Browse">
     <Publish Event="DoAction" Value="OpenFileChooser" Order="1">1</Publish>
     <Publish Property="LOG_PATH" Value="[CHOSEN_DIRECTORY]" Order="2">1</Publish>
-</Control>`
+</Control>
+```
 
 After the OpenFileChooser-CustomAction the MSI property "CHOSEN_DIRECTORY" is set to the user-chosen directory.  In the above example it's stored into LOG_PATH to be able to choose another directory later.
 
