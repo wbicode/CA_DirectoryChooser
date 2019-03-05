@@ -2,6 +2,10 @@
 
 This is a CustomAction for a WiX Project (v3) which provides a handy dialog to choose a directory. <br />
 
+```
+<img src="https://raw.githubusercontent.com/wbicode/CA_DirectoryChooser/master/documentation/example.png" alt="" style="float: left; margin-right: 10px;" />
+```
+
 ## Usage
 
 Include the built CA_DirectoryChooser.CA.dll from this project in your own project or use the published nuget (defined in CA_DirectoryChooser/CA_DirectoryChooser.nuspec). <br />
