@@ -6,7 +6,7 @@ This is a CustomAction for a WiX Project (v3) which provides a handy dialog to c
 
 ## Usage
 
-Include the built CA_DirectoryChooser.CA.dll from this project in your own project or use the published nuget (defined in CA_DirectoryChooser/CA_DirectoryChooser.nuspec). <br />
+Include the built CA_DirectoryChooser.CA.dll from this project in your own project or use the [published nuget](https://www.nuget.org/packages/CA_DirectoryChooser/) (defined in CA_DirectoryChooser/CA_DirectoryChooser.nuspec). <br />
 
 Reference the .dll in your .wxs like so:
 
