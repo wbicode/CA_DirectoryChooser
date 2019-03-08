@@ -9,7 +9,12 @@
     <releaseNotes>Initial Release</releaseNotes>
     <license type="expression">Apache-2.0</license>
     <projectUrl>https://github.com/wbicode/CA_DirectoryChooser</projectUrl>
+    <repository type="git" url="https://github.com/wbicode/CA_DirectoryChooser"/>
     <copyright>Copyright Guntram Meusburger GmbH 2019</copyright>
+    <tags>WiX Installer MSI</tags>
+    <dependencies>
+      <dependency id="Microsoft.WindowsAPICodePack.Shell" version="1.1.0" />
+    </dependencies>
   </metadata>
 
   <files>
