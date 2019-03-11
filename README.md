@@ -41,4 +41,12 @@ After the OpenFileChooser-CustomAction the MSI property "CHOSEN_DIRECTORY" is se
 
 ## Customize Default Directory
 
-Define the property "CA_DC_OPEN_DIR" (If you use multiple calls, use SetProperty with the attribute Before or After) to define the directory which gets opened at startup.
+To define the default directory set the "CA_DC_OPEN_DIR" property. You can use a Publish-Element to set the property before opening each dialog:
+
+```xml
+<Control Id="ChangeFolder" Type="PushButton" X="79" Y="158" Width="80" Height="17" Text="Browse">
+    <Publish Property="CA_DC_OPEN_DIR" Value="C:\Users\MyUser\Downloads">1</Publish>
+    <Publish Event="DoAction" Value="OpenFileChooser" Order="1">1</Publish>
+    <Publish Property="LOG_PATH" Value="[CHOSEN_DIRECTORY]" Order="2">CHOSEN_DIRECTORY</Publish>
+</Control>
+```
