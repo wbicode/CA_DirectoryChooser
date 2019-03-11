@@ -33,7 +33,7 @@ Which can now be called in the GUI (Publish element is a child of the Button-Con
 ```xml
 <Control Id="ChangeFolder" Type="PushButton" X="79" Y="158" Width="80" Height="17" Text="Browse">
     <Publish Event="DoAction" Value="OpenFileChooser" Order="1">1</Publish>
-    <Publish Property="LOG_PATH" Value="[CHOSEN_DIRECTORY]" Order="2">1</Publish>
+    <Publish Property="LOG_PATH" Value="[CHOSEN_DIRECTORY]" Order="2">CHOSEN_DIRECTORY</Publish>
 </Control>
 ```
 
