@@ -64,13 +64,17 @@
     <Content Include="CustomAction.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CA_DirectoryChooser.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WindowsAPICodePack.Core">
+      <Version>1.1.0</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.WindowsAPICodePack.Shell">
       <Version>1.1.0</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="CA_DirectoryChooser.nuspec" />
-    <None Include="LICENSE.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(WixCATargetsPath)" Condition=" '$(WixCATargetsPath)' != '' " />
