@@ -45,8 +45,8 @@ To define the default directory set the "CA_DC_OPEN_DIR" property. You can use a
 
 ```xml
 <Control Id="ChangeFolder" Type="PushButton" X="79" Y="158" Width="80" Height="17" Text="Browse">
-    <Publish Property="CA_DC_OPEN_DIR" Value="C:\Users\MyUser\Downloads">1</Publish>
-    <Publish Event="DoAction" Value="OpenFileChooser" Order="1">1</Publish>
-    <Publish Property="LOG_PATH" Value="[CHOSEN_DIRECTORY]" Order="2">CHOSEN_DIRECTORY</Publish>
+    <Publish Property="CA_DC_OPEN_DIR" Value="C:\Users\MyUser\Downloads" Order="1">1</Publish>
+    <Publish Event="DoAction" Value="OpenFileChooser" Order="2">1</Publish>
+    <Publish Property="LOG_PATH" Value="[CHOSEN_DIRECTORY]" Order="3">CHOSEN_DIRECTORY</Publish>
 </Control>
 ```
